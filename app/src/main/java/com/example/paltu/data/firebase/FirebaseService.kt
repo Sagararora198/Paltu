@@ -8,6 +8,7 @@ class FirebaseService {
     fun login(email: String, password: String, callback: (Boolean, String?) -> Unit) {
         if(!isValidEmail(email)){
             callback(false,"email not valid")
+            return
         }
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
