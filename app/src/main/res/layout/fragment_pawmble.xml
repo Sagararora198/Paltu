@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragments.Pawmble">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="70sp"
-        android:text="@string/hello_blank_fragment" />
-
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+    <include
+        android:id="@+id/emptyStateView"
+        layout="@layout/empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/loader"
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:layout_gravity="center"
+        android:contentDescription="loader"
+        android:visibility="gone" />
 </FrameLayout>

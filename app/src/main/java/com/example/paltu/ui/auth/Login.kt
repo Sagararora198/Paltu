@@ -30,7 +30,7 @@ class Login : AppCompatActivity() {
 
     private fun initializeView() {
         Glide.with(this)
-            .load(R.drawable.untitled_design)
+            .load(R.drawable.paltu_design__4_)
             .into(binding.gifImage)
         binding.signup.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
@@ -42,7 +42,7 @@ class Login : AppCompatActivity() {
             val password = binding.etPassword.text.toString()
             if(email.isNotEmpty() && password.isNotEmpty()){
                     viewModel.login(email,password){
-                            success, _ ->
+                            success, role ->
                         if(success){
                             startActivity(Intent(this,HomeScreen::class.java))
                             Log.d("success","loggedIn")

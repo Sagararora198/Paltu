@@ -16,13 +16,19 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Bottom Navigation -->
         <androidx.cardview.widget.CardView
             android:id="@+id/floating_navigation_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#fff505"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -36,34 +42,38 @@
                 android:paddingVertical="8dp">
 
                 <!-- Left Navigation Button -->
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <ImageView
                     android:id="@+id/nav_left_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_marginHorizontal="30dp"
                     android:contentDescription="med"
                     app:fabSize="normal"
-                    app:srcCompat="@drawable/paltu_logo"/>
+                    android:backgroundTint="#fff505"
+                    app:srcCompat="@drawable/paltu_design__1_"/>
 
                 <!-- Center Navigation Button -->
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <ImageView
                     android:id="@+id/nav_center_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_marginHorizontal="30dp"
                     android:contentDescription="pawmble"
+                    android:backgroundTint="#fff505"
                     app:fabSize="normal"
-                    app:srcCompat="@drawable/paltu_logo"/>
+                    android:src="@drawable/paltu_design__2_"
+                  />
 
                 <!-- Right Navigation Button -->
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                <ImageView
                     android:id="@+id/nav_right_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_marginHorizontal="30dp"
                     android:contentDescription="pet"
                     app:fabSize="normal"
-                    app:srcCompat="@drawable/paltu_logo"/>
+                    android:backgroundTint="#fff505"
+                    app:srcCompat="@drawable/paltu_design__3_"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

@@ -20,4 +20,7 @@ class LoginViewModel :ViewModel(){
         authService.logout()
     }
 
+    fun isUserSignedIn():Boolean{
+     return authService.isUserSignedIn()
+    }
 }

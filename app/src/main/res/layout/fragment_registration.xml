@@ -1,0 +1,316 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFA500"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFA500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter the following details -"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="25dp" />
+
+            <!-- Name Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apka Naam:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter your name"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- Contact Number Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact no.:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/contactInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter contact no."
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <!-- WhatsApp Number Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Whatsapp no.:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/whatsappInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter WhatsApp no."
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <!-- Address Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/addressInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter address"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- Occupation Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Occupation:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/occupationInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter occupation"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- Pet History Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="email"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/useremail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter details"
+                    android:background="#FFFFFF"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <!-- Home Type Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    android:text="In camp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <RadioGroup
+                    android:id="@+id/incamp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/trueOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="True" />
+
+                    <RadioButton
+                        android:id="@+id/falseOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Add this inside the LinearLayout -->
+            <!-- Upload Profile Picture Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="your image"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <Button
+                    android:id="@+id/uploadProfilePictureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:backgroundTint="#fff505"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/profilePicturePreview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_image_24" />
+            </LinearLayout>
+
+            <!-- Upload Pet Picture Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="your document"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+                <Button
+                    android:id="@+id/uploadPetPictureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:backgroundTint="#fff505"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/petPicturePreview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_image_24" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff505"
+                android:layout_marginTop="22dp"
+                android:text="Submit"
+                android:textColor="#000000"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

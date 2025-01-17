@@ -8,4 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#54b1b1</color>
+    <color name="offWhite">#FFF8F0</color>
+    <color name="teal">#4DB6AC</color>
+    <color name="orange">#FF9800</color>
+    <color name="brown_dark">#795548</color>
+    <color name="brown_light">#8D6E63</color>
+    <color name="theme">#f69001</color>
+
 </resources>

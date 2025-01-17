@@ -2,6 +2,7 @@ package com.example.paltu.ui.Home
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.paltu.R
@@ -27,6 +28,7 @@ class HomeScreen : AppCompatActivity() {
 //            supportFragmentManager.beginTransaction()
 //                .replace(R.id.fragment_container, HomeFragment())
 //                .commit()
+            Toast.makeText(this,"Comming Soon", Toast.LENGTH_LONG).show()
         }
 
         binding.navCenterButton.setOnClickListener {
@@ -39,6 +41,7 @@ class HomeScreen : AppCompatActivity() {
 //            supportFragmentManager.beginTransaction()
 //                .replace(R.id.fragment_container, SettingsFragment())
 //                .commit()
+            Toast.makeText(this,"Comming Soon", Toast.LENGTH_LONG).show()
         }
     }
 

@@ -15,14 +15,17 @@
 
         <ImageView
             android:id="@+id/gifImage"
-            android:layout_width="1000dp"
-            android:layout_height="1000dp"
-            android:contentDescription="gif"
-            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:rotation="270"
+            android:layout_height="wrap_content"
             android:translationX="140dp"
-            android:translationY="-150dp"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            android:background="@android:color/white"
+            android:contentDescription="gif"
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/logo"
@@ -30,7 +33,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="30dp"
-            android:src="@drawable/paltu_logo"
+            android:src="@drawable/paltu_logo_removebg_preview"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 import com.example.paltu.R
 import com.example.paltu.databinding.ActivityLoginBinding
 import com.example.paltu.databinding.ActivitySignUpBinding
+import com.example.paltu.ui.Home.HomeScreen
 import com.example.paltu.ui.viewmodel.LoginViewModel
 
 class SignUp : AppCompatActivity() {
@@ -29,7 +30,7 @@ class SignUp : AppCompatActivity() {
 
     private fun initializeView() {
         Glide.with(this)
-            .load(R.drawable.untitled_design)
+            .load(R.drawable.paltu_design__4_)
             .into(binding.gifImage)
 
         binding.login.setOnClickListener {
@@ -44,10 +45,11 @@ class SignUp : AppCompatActivity() {
                 Log.d("email",email)
                 Log.d("password",password)
                 viewModel.signUp(email,password){
-                        success, _ ->
+                        success, role ->
 
                     if(success){
                         Log.d("success","loggedIn")
+                        startActivity(Intent(this, HomeScreen::class.java))
                     }
                     else{
                         Toast.makeText(this,"Login failed", Toast.LENGTH_LONG).show()
